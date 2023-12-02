@@ -2,6 +2,8 @@ html{
     background-color:blanchedalmond;
     padding-left: 10px;
     margin: 0px;
+    overflow: hidden;
+
 }
 body{
     display: flex;
@@ -90,4 +92,76 @@ label:hover{
     font-size: 1.5em;
     color: blue;
     cursor: pointer;
+}
+
+.sandwich{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    overflow:auto;
+}
+#first{
+    display: block;
+    height: 60px;
+    width: 400px;
+    border: 1px solid sandybrown;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #885a35;
+    /*white bread #f0d1a0 or #eec07b*/
+    position:absolute;
+    bottom: 50px;
+}
+#second{
+    display: block;
+    height: 4px;
+    width: 400px;
+    border: solid 1px tan;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    background-color: tomato;
+}
+#third{
+    display: block;
+    height: 40px;
+    width: 400px;
+    border: 1px solid rgb(184, 119, 63);
+    border-radius: 20px;
+    background-color:#4d2b0e;
+    position:absolute;
+    bottom: 60px;
+}
+#fourth{
+    display: block;
+    height: 4px;
+    width: 400px;
+    border: solid 1px tan;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    background-color: rgb(234, 234, 148);
+}
+#fifth{
+    display: block;
+    height: 10px;
+    width: 400px;
+    border: solid 1px rgb(151, 210, 140);
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    background-color: rgb(19, 183, 62);
+    position: absolute;
+    bottom: 40px;
+}
+#sixsth{
+    display: block;
+    height: 70px;
+    width: 400px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: #885a35;
+    /*white bread #f0d1a0 or #eec07b*/
+    position:absolute;
+    bottom: 10px;
+    box-shadow: 2px 2px 2px brgb(41, 11, 11)
 }
