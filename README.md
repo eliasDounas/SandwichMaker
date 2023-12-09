@@ -1,2 +1,0 @@
-# SandwichMaker
-Projet-Web SandwichMaker
