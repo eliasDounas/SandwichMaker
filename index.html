@@ -2,107 +2,355 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandwich Maker</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="icon" type="image/x-icon" href="image/main_img.png">
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<div class="batata">
-    <h1 id="title"> Sandwich Maker 🥪</h1>
-    
-    <div id="o1" class="ChatBox">
-        <h4>Are you ready to build your own custom Sandwich? 👀 </h4>
-        <div>
-        <input type="radio" id="html" name="fav_language" value="Yes">
-        <label for="html">Yes</label><br>
-        <input type="radio" id="css" name="fav_language" value="Hell Yeah!">
-        <label for="css">Heck yeah!</label><br><br>
-    </div>
-    </div>
 
-    <div id="o2" class="ChatBox">
-        <h4>Which type of bread do you want? </h4>
-        <div>
-        <input type="radio" id="wbr" name="breadtype" value="white">
-        <label for="wbr">White Bread</label><br>
-        <input type="radio" id="bbr" name="breadtype" value="brow">
-        <label for="bbr">Brown Bread</label><br>
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="image/main_img.png">
+            </div>
+
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Menu">Menu</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+        </nav>
+
+        <div class="main">
+
+            <div class="men_text">
+                <h1>Get Fresh<span>Burger</span><br>with our<span>Team</span></h1>
+            </div>
+
+            <div class="main_image">
+                <img src="image/hero.png">
+            </div>
+
         </div>
+
+        <p>
+            <i>Le burger trône devant vous, une œuvre culinaire qui éveille les sens. Un pain moelleux 
+            d'un brun doré, encadre avec élégance l'édifice gourmand. À l'intérieur, des strates bien 
+            ordonnées composent cette merveille gustative. La viande, grillée à la perfection, 
+            exhale un parfum alléchant, promesse d'une expérience sensorielle inoubliable.
+            c'est une symphonie de goûts, une invitation à une expérience délectable qui ne demande qu'à être savourée.</i>
+        </p>
+
+        <div class="main_btn">
+            <a href="#" onclick="redirectToOtherPage()" >Order Now</a>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+
+    </section>
+
+
+
+    <!--About-->
+
+    <div class="about" id="About">
+        <div class="about_main">
+
+            <div class="image">
+                <img src="image/banner.png">
+            </div>
+
+            <div class="about_text">
+                <h1><span>About Us</span></h1>
+                <h3>Why Choose us?</h3>
+                <p>
+                    <i>Nous sélectionnons uniquement les ingrédients les plus fins et les plus frais pour confectionner nos burgers 
+                        De la viande succulente, élevée de manière responsable,aux légumes croustillants d'origine locale, chaque 
+                        composant reflète notre engagement envers une qualité intransigeante. 
+                        Nos burgers sont plus qu'un simple repas ; ils sont le témoignage de l'art du savoir-faire culinaire. 
+                        Préparés méticuleusement et grillés de manière experte.</i>
+                </p>
+            </div>
+
+        </div>
+        
+
     </div>
+
+
+
+    <!--le menu-->
+
+    <div class="menu" id="Menu">
+        <h1><span>Our Menu</span></h1>
+
+        <div class="menu_box">
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/buger.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Burger</h2>
+                    <p>
+                        L'art de la simplicité et du plaisir gustatif. Imaginez un délicieux mariage entre deux moitiés de pain moelleux,
+                    </p>
+                    <h3>$20.00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+            
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/pasta.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Pasta</h2>
+                    <p>
+                        Imaginez des brins de pâtes cuits à la perfection, al dente, prêts à être dégustés. Leur forme, qu'elle soit en spirales,
+                    </p>
+                    <h3>$9.99</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/lasagna.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Lasagna</h2>
+                    <p>
+                        Des couches de pâtes ondulées, alternées avec une symphonie de viande savoureuse, une sauce tomate riche.
+                    </p>
+                    <h3>$15.03</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/chocolate_Drink.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Drinks</h2>
+                    <p>
+                        Des glaçons tintent délicatement à chaque mouvement, promettant une fraîcheur bienvenue. 
+                    </p>
+                    <h3>$5.90</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            </div> 
+            
+        </div>
+
+    </div>
+
+
+
+
+
+
     
-    <div id="o3" class="ChatBox">
-        <h4> Which condiment would you like? </h4>
-        <div>
-        <input type="radio" id="mayonnaise" name="condiment" value="Mayonnaise">
-        <label for="mayonnaise">Mayonnaise</label><br>
-        <input type="radio" id="mustard" name="condiment" value="Mustard">
-        <label for="mustard">Mustard</label><br>
-        <input type="radio" id="spicy" name="condiment" value="Spicy">
-        <label for="spicy">Spicy 🥵</label><br>
-    </div></div>
+    <!--Team-->
 
-    <div id="o4" class="ChatBox">
-        <h4> What type of meat would you like?</h4><div>
-        <input type="radio" id="chicken" name="fav_languages" value="Chicken">
-        <label for="chicken">Chicken</label><br>
-        <input type="radio" id="Beef" name="fav_languages" value="GrilledBeef">
-        <label for="Beef">Grilled Beef</label><br>
-    </div></div>
+    <div class="team">
+        <h1>Our<span>Team</span></h1>
 
-    <div id="o5" class="ChatBox">
-        <h4>Would you like to add cheese on your sandwich? </h4>
-        <div>
-        <input type="radio" id="Yes" name="fav_languagees" value="Yes">
-        <label for="Yes">Yes</label><br>
-        <input type="radio" id="Nope" name="fav_languagees" value="Nope">
-        <label for="Nope">Nope</label><br>
-    </div></div>
+        <div class="team_box">
+            <div class="profile">
+                <img src="image/chef1.png">
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">Mohamed Ali ,20 ans d'experience.</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image/chef2.png">
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">Mona Lotfi ,9 ans d'experience.</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image/chef3.jpg">
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">Shin Shon ,11 ans d'experience en chine.</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image/chef4.jpg">
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">Ahmed habbaH ,12 ans d'experience en Mali.</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>Rabat Agdal</p>
+                <p>Marrakech</p>
+                <p>Ifran</p>
+                
+            </div>
+
+            <div class="footer_tag">
+                <h2>Quick Link</h2>
+                <p>Home</p>
+                <p>About</p>
+                <p>Menu</p>
+                <p>Gallary</p>
+                <p>Order</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>+212 777-672035</p>
+                <p>+212 610-156768</p>
+                <p>rafikzakarya58@gmail.com</p>
+                <p>Donaselias15@gmail.com</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Our Service</h2>
+                <p>Fast Delivery</p>
+                <p>Easy Payments</p>
+                <p>24 x 7 Service</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Follows</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <p style="text-align: center;font-size: 40px;" > Merci</p>
+
+    </footer>
+
+    <script src="js_index.js"></script>
+
     
-    <div id="o6" class="ChatBox">
-        <h4>Would you like any vegetables on your sandwich? </h4>
-        <div>
-            <input type="checkbox" id="lettuce" name="topping" value="Lettuce">
-            <label for="lettuce">Lettuce</label><br>  
-            <input type="checkbox" id="tomato" name="topping" value="TomatoSlices">
-            <label for="tomato">Tomato Slices</label><br>
-            <input type="checkbox" id="cucumber" name="topping" value="Cucumber">
-            <label for="cucumber">Cucumber</label><br>  
-        </div></div>         
-
-    <div id="o7" class="ChatBox">
-        <button type="button" class="button" onclick="redirectToOtherPage()" style="text-align: center;">Click here to confirm your order</button><br>
-    </div><br>
-    <div id="o8" style="display:flex;">   
-        <button type="button" class="button" onclick="prevPage()">Prev</button><br>
-        <button type="button" class="button" onclick="nextPage()">Next</button><br>
-    </div>
-
-</div>
-<div class="Sandwich">
-    <div class="Bread Brown bo"></div>
-    <div class="Bread White bo"></div>
-    <div class="Sauce" id="Mayo"></div>
-    <div class="Sauce" id="Mustard"></div>
-    <div class="Sauce" id="Spicy"></div>
-    <div class="Meat" id="Chicken"></div>
-    <div class="Meat" id="Grilled"></div>
-    <div class="Cheese" id="cheese"></div>
-    <div class="Vegies" id="Lettuce"></div>
-    <div class="Vegies" id="maticha">
-    <div class="tomatoes" id="Tomato"></div>
-    <div class="tomatoes" id="Tomato"></div>
-    <div class="tomatoes" id="Tomato"></div>
-    </div>
-    <div class="Vegies" id="Lkhyari">
-    <div class="cucumbers" id="Cucumber"></div>
-    <div class="cucumbers" id="Cucumber"></div>
-    <div class="cucumbers" id="Cucumber"></div>
-    <div class="cucumbers" id="Cucumber"></div>
-    </div>
-    <div class="BottomBread Brown bo"></div>
-    <div class="BottomBread White bo"></div>
-</div>
-    <script src="index.js"></script>
 </body>
 </html>

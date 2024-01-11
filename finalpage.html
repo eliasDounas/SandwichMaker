@@ -1,18 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandwich Maker</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="icon.png">
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sandwich Maker</title>
+        <link rel="icon" type="image/x-icon" href="image/main_img.png">
+        <link rel="stylesheet" href="style_index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
 <body>
-    <br><br><br><br><br>
-    <div>
-        <h1 style="text-align: center; font-size: 2.5em;"><strong>Congratulations 🙌<br> Your order is now complete!</strong>  </h1>
-    </div>
-    <script src="index.js"></script>
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="image/main_img.png">
+            </div>
+
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Menu">Menu</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+        </nav>
+
+        <div class="main">
+
+            <div class="men_text">
+                <h1><span>Congratulations 🙌</span><br><span>Your order will be ready!</span></h1>
+            </div>
+
+            <div class="main_image">
+                <img src="image/hero.png">
+            </div>
+
+        </div>
+
+        
+
+        <div class="main_btn">
+            <a href="#" onclick="redirectToMain()" >retour</a>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+
+    </section>
+
+
+
+   
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>Rabat Agdal</p>
+                <p>Marrakech</p>
+                <p>Ifran</p>
+                
+            </div>
+
+            <div class="footer_tag">
+                <h2>Quick Link</h2>
+                <p>Home</p>
+                <p>About</p>
+                <p>Menu</p>
+                <p>Gallary</p>
+                <p>Order</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>+212 777-672035</p>
+                <p>+212 610-156768</p>
+                <p>rafikzakarya58@gmail.com</p>
+                <p>Dounaselias15@gmail.com</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Our Service</h2>
+                <p>Fast Delivery</p>
+                <p>Easy Payments</p>
+                <p>24 x 7 Service</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Follows</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <p style="text-align: center;font-size: 40px;" > Merci</p>
+
+    </footer>
+
+    <script src="finalpage.js"></script>
 </body>
 </html>
